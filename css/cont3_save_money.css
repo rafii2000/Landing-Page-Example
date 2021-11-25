@@ -1,0 +1,105 @@
+
+.save_money__section{
+    margin-top: 180px;
+}
+
+.save_money__section > h3{
+    text-align: center;
+}
+
+
+
+.save_money__section > p{
+
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin-top: 32px;
+}
+
+.save_money__cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.save_money__card{
+    width: 25%;
+    margin-top: 50px;
+}
+
+.save_money__card > h3{
+    text-align: center;
+}
+
+.save_money__card > p{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin-top: 16px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1130px) {
+    .container3__content{
+        margin: 0px 10px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+   .save_money__card{
+       width: 30%;
+   }
+
+}
+
+
+@media only screen and (max-width: 764px) {
+    .save_money__section{
+        width: 90%;
+    }
+    
+    .save_money__section > h3 br{
+        display: none;
+    }
+
+    .save_money__cards{
+        justify-content: space-between;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .save_money__cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .save_money__card{
+        width: 290px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .save_money__section > p br{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .save_money__card{
+        width: 95%;
+    }
+}
+
+

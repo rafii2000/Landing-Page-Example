@@ -1,0 +1,161 @@
+/* .container2{
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0F1144;
+}
+
+
+.container2__content{
+
+    max-width: var(--main-width);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.color_mixer_container{
+    height: 0px;
+    position: relative;
+}
+
+.color_mixer_layer{
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    top: -160px;
+    background: linear-gradient(180deg, rgba(15, 17, 68, 0) 0%, #0F1144 160px);
+}
+
+.container2--background{
+    background-color: #0F1144;
+}
+
+
+/* ----- BUSINESS TRAFFIC SECTION ----- */
+.business_traffic__section{
+    display: grid;
+    grid-template: 
+            "a c" 200px 
+            "b c" 250px / calc(50% - 15px) calc(50% - 15px);
+    column-gap: 30px;
+
+    justify-content: center;
+}
+
+.business_traffic__content{
+    grid-area: a;
+}
+
+.business_traffic__content > h1{
+    text-align: left;
+}
+
+
+.business_traffic__content > p{
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    margin-top: 32px;
+    width: 440px;
+}
+
+
+
+.business_traffic__button{
+    display: flex;
+    align-self: flex-start;
+    grid-area: b;
+    margin-top: 43px;
+}
+
+
+.business_traffic__image{
+    grid-area: c;
+}
+
+.business_traffic__image > img{
+    height: 100%;
+    width: auto;
+}
+
+
+
+@media only screen and (max-width: 1130px) {
+    .container2__content{
+        margin: 0px 10px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+    
+    .business_traffic__content > p{
+        width: 95%;
+        width: 100%;
+    } 
+
+    .business_traffic__section{
+        display: grid;
+        grid-template: 
+                "a c" auto 
+                "b c" auto / 50% 50%;
+        padding: 0px 40px;
+    }
+
+    .business_traffic__image > img{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .business_traffic__section{
+        grid-template: 
+            "a" auto
+            "c" auto
+            "b" auto/ 75%;
+        padding: 0px;
+
+    }
+
+    .business_traffic__content{
+        text-align: center;
+    }
+
+    .business_traffic__content > h1{
+        text-align: center;
+    } 
+
+    .business_traffic__image{
+        text-align: center;
+    }
+
+    .business_traffic__image > img{
+        width: 75%;
+        width: 270px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .business_traffic__button{
+        justify-self: center;
+        margin: 10px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
+    .business_traffic__image > img{
+        width: 0%;
+    }
+}

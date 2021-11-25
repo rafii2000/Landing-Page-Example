@@ -1,0 +1,131 @@
+
+.send_email__section__background{
+    position: relative;
+    opacity: 50%;
+}
+
+.send_email__section__background > img{
+    width: 2000px;
+    height: auto;
+    position: absolute;
+    top: 0px;
+}
+
+.send_email__section{
+    width: 940px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #181a50;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.send_email__section > h1{
+    /* H1 */
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: var(--orange);
+}
+
+.send_email__section > p{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #95A1BB;
+    margin-top: 20px;
+}
+
+
+.send_email__section > form{
+    margin-top: 23px;
+    display: flex;
+}
+
+.send_email__section > form > input{
+    width: 300px;
+    height: 45px;
+    line-height: 45px;
+    padding: 5px 15px;
+    border-radius: 5px 0px 0px 5px;
+    border: 0px;
+    background-color: #2f3061;
+    color: rgba(255,255,255,0.5);
+    font-size: 15px;
+}
+
+
+
+.send_email__section > form > button{
+    width: 130px;
+    border: 0px;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: none;
+}
+
+.form_prompt{
+    font-family: Gilroy-SemiBold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #8476AA;
+    margin-top: 16px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1130px) {
+    .container7__content{
+        margin: 0px 10px;
+    }
+
+}
+
+@media only screen and (max-width: 1050px) {
+    .send_email__section{
+        width: calc(90% - 100px);
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .send_email__section{
+        width: 85%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .send_email__section > form > input{
+        width: 90%;
+        
+    }
+    
+    .send_email__section > form > button{
+        width: 40%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .send_email__section > p > br{
+        display: none;
+        
+    }
+}
+
+

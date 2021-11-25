@@ -1,0 +1,214 @@
+
+.line{
+    position: relative;
+    width: 10px;
+    height: 100px;
+    opacity: 12.5%;
+      
+    animation-iteration-count: infinite;
+    animation-name: falling-down--short;
+    animation-duration: 5s;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.line__head{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #A4FFFF;
+    position: absolute;
+    z-index: 2;
+}
+
+.line__body{
+
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(0deg, rgba(164, 255, 255, 0) 22.28%, #A4FFFF 96.99%);
+    position: absolute;
+    top: 5px;
+    left: 4px;
+}
+
+
+
+
+/* FALLING DOWN */
+
+.falling_down_animation_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.falling_down_animation__right_side,
+.falling_down_animation__left_side{
+    width: 550px;
+    height: 0px;    /* nie ma znaczenia */
+    position: relative;
+    /* border: 1px solid azure; */
+}
+
+
+.line_rotate--180deg{
+    transform: rotate(180deg);
+    position: absolute;
+
+}
+
+
+
+/* FALLING DIAGONALLY TO RIGHT-TOP */
+
+
+.falling_diagonally_right-top_animation_container{
+
+    width: 0px;     /*nie ma znaczenia*/
+    height: 0px;    /*nie ma znaczenia*/
+    position: relative;
+    /* border: 1px solid rgb(33, 251, 251); */
+}
+
+.line_rotate--60deg{
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+
+    transform: rotate(60deg);
+    transform-origin: top;
+    position: absolute;
+}
+
+
+
+/* FALLING DIAGONALLY DOWN TO LEFT */
+
+.falling_diagonally_left-bottom_animation_container{
+
+    width: 0px;       /*nie ma znaczenia*/
+    height: 0px;      /*nie ma znaczenia*/
+    position: relative;
+    float: right;
+    /* border: 1px solid azure; */
+    /* overflow: hidden; */
+
+}
+
+.line_rotate--240deg{
+    height: 0px;
+    display: flex;
+    align-items: flex-end;
+
+    transform: rotate(240deg);
+    transform-origin: top;
+    position: absolute;    
+}
+
+
+
+ /* The animation code */
+ @keyframes falling-down--short {
+    0%   {height: 100px; }
+    70%  {height: 250px; }
+    80%  {height: 250px; opacity: 0;}
+    90%  {height: 100px; opacity: 0;}
+    100% {height: 100px; }
+}
+
+ /* The animation code */
+ @keyframes falling-down--medium {
+    0%   {height: 200px; }
+    70%  {height: 350px; }
+    80%  {height: 350px; opacity: 0;}
+    90%  {height: 200px; opacity: 0;}
+    100% {height: 200px; }
+}
+
+ /* The animation code */
+ @keyframes falling-down--long {
+    0%   {height: 300px; }
+    70%  {height: 450px; }
+    80%  {height: 450px; opacity: 0;}
+    90%  {height: 300px; opacity: 0;}
+    100% {height: 300px; }
+}
+
+
+
+
+
+
+
+/* PULSE BLOBS */
+
+.pulse_blobs_container_animation{
+
+    width: calc(100% - 2px);
+    height: 650px;
+    height: 0px;
+    position: relative;
+}
+
+.blob{
+
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.5;
+
+    animation-name: blob_pulse--brightest;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blob_pulse--bright {
+    0% {opacity: 60%; transform: scale(1)}
+    50% {opacity: 0%; transform: scale(0.5)}
+    100% {opacity: 60%; transform: scale(1)}
+}
+
+@keyframes blob_pulse--brighter {
+    0% {opacity: 75%; transform: scale(1)}
+    50% {opacity: 0%; transform: scale(0.5)}
+    100% {opacity: 50%; transform: scale(1)}
+}
+
+@keyframes blob_pulse--brightest {
+    0% {opacity: 90%; transform: scale(1)}
+    50% {opacity: 0%; transform: scale(0.5)}
+    100% {opacity: 50%; transform: scale(1)}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+   
+    .falling_down_animation__right_side,
+    .falling_down_animation__left_side{
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 764px) {
+   
+    .falling_down_animation__right_side,
+    .falling_down_animation__left_side{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+   
+    .falling_diagonally_right-top_animation_container,
+    .falling_diagonally_left-bottom_animation_container{
+        display: none;
+    }
+}

@@ -1,0 +1,177 @@
+
+.finding_information__section{
+    display: flex;
+    column-gap: 85px;
+    margin-bottom: 200px;
+}
+
+
+.finding_information__image{
+    width: 42%;
+}
+
+.finding_information__image > img{
+    width: 100%;
+    height: auto;
+}
+
+.finding_information__image2{
+    width: 48%;
+    display: none;
+}
+
+.finding_information__image2 > img{
+    width: 100%;
+    height: auto;
+}
+
+.finding_information__content{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+}
+
+.finding_information__content > h2{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.325px;
+    color: var(--turquoise);
+}
+
+.finding_information__content > p{
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-top: 32px;
+}
+
+.finding_information__cards{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+}
+
+.finding_information__card{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.finding_information__card > img{
+    width: 36px;
+    height: auto;
+}
+
+.finding_information__card > h4{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: var(--turquoise);
+    margin-top: 16px;
+}
+
+.finding_information__card > p{
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-top: 8px;
+}
+
+@media only screen and (max-width: 1130px) {
+    .container6__content{
+        margin: 0px 10px;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .finding_information__section{
+        align-items: center;
+        column-gap: 30px;
+    }
+
+    .finding_information__image{
+        width: 43%;
+    }
+
+    .finding_information__content{
+        width: 57%;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .finding_information__section{
+        column-gap: 0px;
+        justify-content: center;
+    }
+
+    .finding_information__image{
+        width: 0%;
+    }
+
+    .finding_information__image2{
+        width: 300px;
+        display: block;
+        margin-top: 25px;
+    }
+
+    .finding_information__content{
+        width: 70%;
+        align-items: center;
+    }
+
+    .finding_information__content > h2{
+        text-align: center;
+    }
+
+    .finding_information__content > p{
+        text-align: center;
+    }
+
+    .finding_information__cards{
+
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .finding_information__card{
+
+        width: 300px;
+        margin-top: 50px;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    .finding_information__content{
+        width: 85%;
+        align-items: center;
+    }
+}
+
+
+
+@media only screen and (max-width: 350px) {
+    .finding_information__card{
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .finding_information__image2{
+        width: 90%;
+    }
+
+}
